@@ -1,0 +1,20 @@
+{% load static %}
+
+<table border="1px">
+    <tr>
+        <th>Task name</th>
+        <th>Date & Time</th>
+        <th>Complete or not</th>
+    </tr>
+
+    {% for task in tasks %}
+    <tr>
+        <td>{{task.title}}</td>
+        <td>{{task.createdDate}}</td>
+        <td>{{task.complete}}</td>
+    </tr>
+
+    {% endfor %}
+
+
+</table>
